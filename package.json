@@ -1,0 +1,40 @@
+{
+  "name": "pi-mindmap",
+  "version": "0.1.0",
+  "description": "Pi extension for creating Mermaid mind maps from outlines.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "mindmap",
+    "mermaid"
+  ],
+  "license": "MIT",
+  "main": "extensions/index.ts",
+  "files": [
+    "extensions",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": ">=0.79.8 <1.0.0",
+    "@earendil-works/pi-coding-agent": ">=0.79.8 <1.0.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "0.79.8",
+    "@earendil-works/pi-coding-agent": "0.79.8",
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  }
+}
